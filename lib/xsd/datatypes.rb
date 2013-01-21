@@ -655,7 +655,7 @@ private
   	s << ".#{ @secfrac }"
       else
 	s << sprintf("%.16f",
-          (@data.sec_fraction * DayInSec).to_f).sub(/^0/, '').sub(/0*$/, '')
+          @data.sec_fraction.to_f).sub(/^0/, '').sub(/0*$/, '')
       end
     end
     add_tz(s)
@@ -705,7 +705,7 @@ private
   	s << ".#{ @secfrac }"
       else
 	s << sprintf("%.16f",
-          (@data.sec_fraction * DayInSec).to_f).sub(/^0/, '').sub(/0*$/, '')
+          @data.sec_fraction.to_f).sub(/^0/, '').sub(/0*$/, '')
       end
     end
     add_tz(s)
