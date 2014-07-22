@@ -15,7 +15,7 @@ module XMLParser
 
 
 class LibXMLParser < XSD::XMLParser::Parser
-  include XML::SaxParser::Callbacks
+  include LibXML::XML::SaxParser::Callbacks
 
   def do_parse(string_or_readable)
     if string_or_readable.respond_to?(:read)
