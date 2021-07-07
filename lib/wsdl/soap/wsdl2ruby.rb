@@ -58,7 +58,7 @@ private
   end
 
   def create_file
-    @modulepath = @opt['module_path']
+    @modulepath = [ @opt['module_path'] ]
     create_classdef if @opt.key?('classdef')
     create_mapping_registry if @opt.key?('mapping_registry')
     create_servant_skelton(@opt['servant_skelton']) if @opt.key?('servant_skelton')
